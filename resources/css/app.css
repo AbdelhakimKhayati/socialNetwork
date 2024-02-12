@@ -1,0 +1,25 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .text-decoration-none :hover{
+      color: white;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  body {
+      /* background: linear-gradient(to bottom, #fff, #28a745, #343a40) no-repeat; */
+      background-image: url('/public/img/image1.jpg');
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      /* padding-bottom: 60px;
+      min-height: 100vh; */
+  }
