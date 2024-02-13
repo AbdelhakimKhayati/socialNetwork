@@ -64,5 +64,4 @@ Route::middleware('guest')->group(function () {
     Route::Post('/login', [LoginController::class, 'store'])->name('login.store');
 });
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
-Route::get('/information',[InformationController::class, 'index'])->name('information.index');
 

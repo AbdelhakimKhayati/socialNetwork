@@ -2,10 +2,13 @@
     <div class="card-body">
         <div class="row my-2">
             <div class="col position-relative">
-                <h4><img class="rounded-circle mx-2" src="{{ asset('storage/' . $publication->profile->image) }}" width="60px"/>{{ $publication->profile->name }}</h4>
-                <a href="{{ route('profile.show', $publication->profile->id) }}" class="stretched-link"></a>
+                @if($publication->profile !== null && $publication->profile->image !== null)
+                    <h4><img class="rounded-circle mx-2" src="{{ asset('storage/' . $publication->profile->image) }}" width="60px"/>{{ $publication->profile->name }}</h4>
+
+                    <a href="{{ route('profile.show', $publication->profile->id) }}" class="stretched-link"></a>
+                @endif
             </div>
-            <div class="col d-flex justify-content-end">
+            <div class="col-2 d-flex justify-content-end">
                 @can('update', $publication)
                 @can('delete', $publication)
                 <div class="dropdown">

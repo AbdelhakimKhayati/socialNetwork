@@ -27,12 +27,15 @@
                   </div>
 
                   <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-start mb-4">
+                  <div class="form-check d-flex justify-content-start mb-2">
                     <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
                     <label class="form-check-label" for="form1Example3"> Remember password </label>
                   </div>
+                  <div class="d-flex justify-content-start mt-4">
+                        <a href="{{ route('profile.create') }}">inscrivez-vous maintenant</a>
+                        <button class="btn btn-primary btn-lg btn-block ms-5 w-75" type="submit">Login</button>
+                  </div>
 
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
                     </form>
                 </div>
               </div>

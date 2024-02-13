@@ -20,7 +20,6 @@ class Profile extends Model
 
     public function getImageAttribute($value){
         return $value ?? 'profile/profile.png';
-        dd($value);
     }
 
     public function publications(){
